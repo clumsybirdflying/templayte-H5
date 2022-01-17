@@ -1,0 +1,35 @@
+.appFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    .filterItem {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 16px;
+        color: #999999;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 20px;
+        &.active {
+            font-size: 18px;
+            color: #648FFC;
+            position: relative;
+            font-weight: bold;
+            &::after {
+                content: "";
+                display: flex;
+                position: absolute;
+                left: 50%;
+                margin-left: -5px;
+                bottom: -5px;
+                width: 10px;
+                height: 2px;
+                background-color: #648FFC;
+            }
+        }
+    }
+}

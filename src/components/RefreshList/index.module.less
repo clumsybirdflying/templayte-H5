@@ -1,0 +1,56 @@
+.pull {
+  @indicatorH:60px;
+  flex: 1;
+  height: 100%;
+  .error {
+    color: #FB4848;
+  }
+  :global{
+    .am-list{
+      width: 100%;
+    }
+    .am-list-body{
+      &::before,&::after{
+        height: 0!important;
+      }
+    }
+    .list-view-section-body{
+      display: flex;
+      padding: 10px 0; 
+    }
+    // indicator
+    .am-pull-to-refresh-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: @indicatorH;
+    }
+    .am-pull-to-refresh-down{
+      .am-pull-to-refresh-indicator{
+        margin-top: -@indicatorH;
+      }
+    }
+    // 样式重置
+    .am-list-header{
+      padding: 0;
+      .ica-abnoraml{
+        height: 60vh;
+      }
+    }
+    .am-list-body{
+      background: none;
+      border: 0 none;
+      &::before,&::after{
+        content: none!important;
+      }
+    }
+    .am-list-footer{
+      min-height:80px;
+      text-align: center;
+      font-size: 13px; 
+      color: #666;
+      line-height: 20px;
+      padding: 20px 0 50px;
+    }
+  }
+}

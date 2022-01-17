@@ -1,0 +1,43 @@
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+// 去掉IE密码输入框的小眼睛
+::-ms-clear,
+::-ms-reveal {
+  display: none;
+}
+//去掉Chrome浏览器记住密码时黄色背景
+input:-webkit-autofill {
+  box-shadow: 0 0 0 30px #fff inset !important;
+}
+// 单行省略
+.simpleOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subTitle {
+  text-align: left;
+  font-size: 16px;
+  color: #666666;
+  width: 100%;
+  margin: 20px 0 10px;
+  line-height: 25px;
+}
+
+.positionR {
+  position: relative;
+}

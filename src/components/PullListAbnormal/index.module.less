@@ -1,0 +1,30 @@
+.indicator {
+  i,span{
+    display: inline-block;
+    vertical-align: top;
+  }
+  :global {
+    .iconloading :local {
+      font-size: 18px; 
+      color: #ccc;
+      animation: loading 2.5s linear infinite;
+    }
+    @keyframes loading {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  span{
+    padding-left: 8px;
+  }
+}

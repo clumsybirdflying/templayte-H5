@@ -1,0 +1,47 @@
+// 弹窗样式
+.confirm {
+  :global {
+    .am-modal-transparent{
+      .am-modal-content{
+        padding-top: 0.4267rem; // 32px
+        .am-modal-body{
+          padding: 0 1.0667rem 0.4rem; // 80px 30px
+        }
+  
+      }
+    }
+    .am-modal-header{
+      padding: 0 1.0667rem;
+    }
+    .am-modal-title{
+      height: 0.64rem; // 48px
+      font-size: 0.48rem;
+      color: #333;
+      line-height: 0.64rem;
+    }
+    .am-modal-button-group-h {
+      @sizeH:1.1733rem;
+      .am-modal-button{
+        height: @sizeH;
+        font-size: 0.4267rem;
+        line-height: @sizeH;
+        background: none;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1.3333rem;
+    font-size: 0.3733rem;
+    color: #333;
+    line-height: 0.6933rem; // 52px
+    padding-top: 0.1333rem;
+  }
+}
+.min {
+  .info {
+    min-height: 1.8667rem;
+  }
+}

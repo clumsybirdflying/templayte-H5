@@ -1,0 +1,205 @@
+.FpwdPage {
+  padding: 15px;
+  .FpwdForm {
+    // position: relative;
+    .adm-list-default {
+      border: none;
+    }
+  }
+  .pwdFormItem {
+    position: relative;
+  }
+  .visibleBtn {
+    position: absolute;
+    right: 25px;
+    top: 23px;
+  }
+  .subTitle {
+      text-align: center;
+      font-size: 16px;
+      color: #666666;
+      width: 100%;
+      margin: 20px 0 10px;
+  }
+  .headLayout {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      font-size: 15px;
+      color: #333333;
+      .msgStatus {
+          &.color0 {
+              background: #18C796;
+          }
+          &.color1 {
+              background: #CCCCCC;
+          }
+          &.color2 {
+              background: #FF5C5C;
+          }
+          margin-left: auto;
+          height: 24px;
+          width: 52px;
+          line-height: 24px;
+          text-align: center;
+          border-radius: 16px 16px 0 16px;
+          font-size: 12px;
+          color: #FFFFFF;
+      }
+  }
+  .deviceName {
+      font-size: 14px;
+      color: #666666;
+      line-height: 20px;
+      margin-bottom: 6px;
+  }
+  .serialLayout {
+      display: flex;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #DEDEDE;
+      font-size: 12px;
+      color: #999999;
+      line-height: 17px;
+      margin-bottom: 10px;
+      .time {
+          margin-left: auto;
+      }
+  }
+  .groupLayout {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 114px;
+      overflow: auto;
+      .item {
+          height: 28px;
+          line-height: 28px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin: 10px 10px 0 0;
+          opacity: 0.8;
+          background: #F8F8F8;
+          border-radius: 8px;
+          font-size: 12px;
+          color: #666666;
+      }
+  }
+  .imgLayout {
+      margin-top: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .deviceImg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 180px;
+          background: rgba(0,0,0,0.04);
+          border-radius: 8px;
+          :global{
+              img {
+                  max-width: 100%;
+                  max-height: 180px;
+              }
+          }
+      }
+      :global{
+          .iconfont { 
+              position: absolute;
+              font-size: 50px;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+              color: #fff;
+          }
+      }
+  }
+  .statusLayout {
+      .signLayout {
+          .tip {
+              display: flex;
+              font-size: 14px;
+              color: #333333;
+              line-height: 20px;
+              margin-top: 20px;
+              margin-bottom: 10px;
+          }
+          .signButtons {
+              display: flex;
+              justify-content: space-between;
+              font-size: 14px;
+              color: #666666;
+          }
+          .dealed,
+          .misinformation {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 162px;
+              height: 36px;
+              border: 1px solid #CCCCCC;
+              border-radius: 8px;
+          }
+      }
+      .distortLayout{
+          .editLayout {
+              display: flex;
+              align-items: center;
+              border-bottom: 1px solid #DEDEDE;
+              .textarea {
+                  flex: 1;
+                  padding-left: 0;
+                  color: #333333;
+                  :global {
+                      .am-list-line {
+                          &::after {
+                              display: none;
+                          }
+                      }
+                      input {
+                          line-height: 1.5;
+                      }
+                  }
+              }
+              .numberLayout {
+                  width: 35px;
+                  margin-left: auto;
+                  font-size: 12px;
+                  color: #333333;
+                  span {
+                      color: #CCCCCC;
+                  }
+              }
+          }
+          .tip {
+              display: flex;
+              font-size: 14px;
+              color: #333333;
+              line-height: 20px;
+              margin-top: 20px;
+              margin-bottom: 10px;
+          }
+          .footerLayout {
+              margin-top: 15px;
+              display: flex;
+              justify-content: flex-end;
+              margin-top: 12px;
+              :global {
+                  .am-button {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 90px;
+                      height: 36px;
+                      margin-left: 16px;
+                      font-size: 14px;
+                      &:last-child {
+                          background-color: #648FFC;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

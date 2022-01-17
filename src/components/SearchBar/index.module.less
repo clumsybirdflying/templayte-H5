@@ -1,0 +1,76 @@
+@import "./../../assets/css/theme.less";
+
+.searchBar{
+  @sizeH: 36px;
+  display: flex;
+  padding: 6px 15px;
+  :global{
+    .am-search{
+      flex: 1;
+      width: 100%;
+      background: none;
+      height: @sizeH;
+    }
+    .am-search-clear{
+      box-sizing: border-box;
+      height:  @sizeH;
+      width:  @sizeH;
+    }
+    .am-search-input{
+      height: 100%;
+      border-radius: 8px;
+      .am-search-synthetic-ph{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      input[type="search"]{
+        height: 100%;
+      }
+      .am-search-synthetic-ph-placeholder{
+        color: #999;
+        font-size: 0.3467rem;
+        line-height: @sizeH;
+      }
+      .am-search-synthetic-ph-container{
+        display: flex;
+        align-items:center;
+      }
+      .am-search-synthetic-ph-icon{
+        display: block;
+        height: @sizeH;
+        width: 0.4267rem;
+        background-size: 0.4rem auto; // 32px
+        background-position: center center;
+      }
+    }
+    .am-search-cancel{
+      font-size: 0.4rem;
+      height: @sizeH;
+      line-height: @sizeH;
+      color: #333;
+      padding-left: 0.32rem;
+    }
+  }
+}
+ // 白色
+ .is-white{
+  background: #fff;
+  :global{
+    .am-search-input {
+      // background: #f4f4f4;
+      background: #ebebeb;
+    }
+  }
+}
+// 灰色
+.is-gray{
+  // background: #fff;
+  :global{
+    .am-search-input {
+      // background: #f4f4f4;
+      background: #ebebeb;
+    }
+  }
+}

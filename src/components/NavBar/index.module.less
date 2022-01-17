@@ -1,0 +1,33 @@
+.header{
+  @sizeH: 44px;
+  :global{
+    .am-navbar{
+      height: @sizeH;
+    }
+    .am-navbar-left,.am-navbar-right{
+      min-width: 1.2rem;
+    }
+    .am-navbar-title{
+      flex: 4;
+      width: 0.2rem;
+    }
+    .am-navbar-left-icon{
+      font-size: 0.48rem;
+      color: #333;
+    }
+    .iconfont {
+      font-size: 22px;
+      color: #333;
+    }
+  }
+  .isGray {
+    background: #F5F8FC;
+  }
+  .title{
+    font-size: 0.48rem; // 36px
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,78 @@
+.RegisterPage {
+  padding: 15px;
+  .RegisterForm {
+    // position: relative;
+    .adm-list-default {
+      border: none;
+    }
+  }
+  .positionR {
+    position: relative;
+  }
+  .prefix {
+    position: absolute;
+    top: 27px;
+    left: 40px;
+    font-size: 15px;
+    z-index: 99;
+  }
+  .pwdFormItem {
+    position: relative;
+  }
+  .visibleBtn {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .tips {
+    font-size: 13px;
+    color: #999999;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .show {
+      display: block;
+  }
+  .hidden {
+      display: none;
+  }
+  .primaryColor {
+    color: @primary-color;
+  }
+  .positionA {
+    position: absolute;
+  }
+  .Checkbox {
+    :global {
+      .adm-list-item-title, .adm-list-item-description {
+        margin-top: 26px;
+      }
+    }
+  }
+  .height60 {
+    height: 80px;
+  }
+  .xxWrapper {
+    top: 0;
+    left: 50px;
+    margin-top: 11px !important;
+  }
+  .wrapper{
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    width: 300px;
+    line-height: 23px;
+    margin-top: 23px;
+    max-width: 80%;
+  }
+  .checkWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
