@@ -1,7 +1,9 @@
 {
-  "name": "saas_dev_msg_h5",
+  "name": "{{ name }}",
   "version": "1.0.0",
   "private": true,
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "dependencies": {
     "@ezviz/saas_atom_auth_config": "1.1.8",
     "@rematch/core": "^1.3.0",
